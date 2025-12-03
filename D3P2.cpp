@@ -54,7 +54,7 @@ signed main(){
         for(int j=m-1; j>=0; --j){
             for(int k=j+1; k<m; ++k){
                 for(int x=2; x<=12; ++x){
-                    if(k + x - 2 >= m || j + x - 1 >= m) continue;
+                    if(k + x - 2 >= m) continue;
                     dp[j][x] = max(dp[j][x], dp[k][x-1] + v[i][j]*p(x-1));
                 }               
             }
@@ -74,3 +74,4 @@ signed main(){
 
 
 }
+
