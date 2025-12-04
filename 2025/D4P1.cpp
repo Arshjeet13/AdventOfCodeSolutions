@@ -26,8 +26,7 @@ signed main(){
     int dy[8] = {1,-1,0,1,-1,0,1,-1};
 
     int ans = 0;
-    vector<string> vnew;
-
+    
     for(int x=0; x<n; ++x){
         for(int y=0; y<m; ++y){
             int cnt = 0;
